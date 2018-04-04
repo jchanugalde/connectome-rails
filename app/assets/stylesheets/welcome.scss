@@ -1,0 +1,307 @@
+// Place all the styles related to the Welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+/*
+Theme Name: Bent
+Author: Allie
+Version: 1.0
+URL: http://designscrazed.org/
+Edited by: jchanugalde
+*/
+
+/* Table of Content
+==================================================
+  1. COMMON STYLES
+  2. SECTION HOME
+  3. SECTION ABOUT
+  4. SECTION VIDEO
+  5. SECTION TESTIMONIAL
+  6. SECTION FEATURES
+  7. SECTION CALL TO ACTION
+  8. SECTION APPS SCREEN
+  9. SECTION FUN FACTS
+  10. SECTION DOWNLOAD
+  11. SECTION CONTACT
+  12. SECTION SUBSCRIBE
+  13. SECTION FOOTER
+
+*/
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    overflow-y: scroll;
+    overflow-x: visible;
+}
+p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+}
+/*---------------------------------------
+   COMMON STYLES
+-----------------------------------------*/
+
+.section_title {
+    padding-top: 90px;
+    padding-bottom: 50px;
+}
+.section_title h2 {
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    color: #333;
+    font-size: 30px;
+    font-weight: 400;
+}
+.section_title h2:after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    width: 60px;
+    height: 1px;
+    background-color: #13904C;
+    left: 50%;
+    margin-left: -30px;
+}
+.section_title p {
+    text-align: center;
+    margin-top: 45px;
+    color: #333;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 300;
+}
+.parallax {
+    background-attachment: fixed !important;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img {
+  display: inline-block;
+}
+/*---------------------------------------
+   SECTION HOME
+-----------------------------------------*/
+/*menu*/
+
+.header h2 {
+    height: 0px;
+    margin: 0px;
+}
+.header {
+    background: url(https://wallpapercave.com/wp/KARQiCN.jpg);
+    background-size: cover;
+	background-repeat: no-repeat;
+}
+.header .section_overlay {
+    background-color: rgba(33, 33, 33, .75);
+}
+.logo{
+    padding-bottom: 10px;
+}
+.home_text{
+    text-align: center;
+}
+
+@media (max-width: 768px){
+    .home_text{
+        text-align: center;
+    }
+
+}
+.home_text h1 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 45px;
+    padding-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 16em;
+}
+.home_text p {
+    color: #fff;
+    font-size: 17px;
+    line-height: 28px;
+    margin-top: 0px;
+    font-weight: 300;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40em;
+}
+.getstarted-btn {
+    margin-top: 90px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
+.home-btn,
+.home-btn:focus,
+.home-btn:active,
+.home-btn:visited {
+    background: transparent;
+    border-color: #7CB32E;
+    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 19px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+.home-btn:hover {
+    background-color: #7CB32E;
+    color: #fff;
+}
+.tuor,
+.tuor:focus,
+tuor:active,
+tuor:visited {
+    color: #fff;
+    margin-left: 20px;
+    text-transform: uppercase;
+    font-size: 19px;
+    font-weight: 500;
+    background: transparent;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+.tuor:hover {
+    color: #fff;
+}
+.tuor i {
+    font-size: 20px;
+    padding-left: 5px;
+    color: #7CB32E;
+}
+
+
+
+/*---------------------------------------
+   SECTION ABOUT
+-----------------------------------------*/
+
+
+
+.about {
+    background: #F1F1F1;
+}
+.inner_about_area {
+    padding-top: 50px;
+}
+.inner_about_title {
+    padding-bottom: 50px;
+}
+.inner_about_title h2 {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 37px;
+    position: relative;
+}
+.inner_about_title h2:after {
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    width: 70px;
+    background: #13904C;
+    height: 1px;
+}
+.inner_about_title p {
+    font-size: 19px;
+    line-height: 24px;
+    margin-top: 40px;
+}
+.inner_about_desc {} .single_about_area {
+    position: relative;
+    padding-bottom: 4px;
+    padding-left: 80px;
+    margin-right: 20px;
+}
+.single_about_area div {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.single_about_area div i {
+    font-size: 55px;
+    color: #7CB32E;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+.single_about_area h3 {
+    color: #7CB32E;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 800;
+}
+.single_about_area p {
+    color: #727272;
+    font-size: 15px;
+}
+.single_about_area:hover div i {
+    color: #13904C;
+}
+.about_mic img {} @media (min-width: 991px) and (max-width: 1200px) {
+    .about_mic img {
+        margin-top: 184px;
+        width: 80%;
+        margin-right: 20%
+    }
+}
+
+/*---------------------------------------
+   SECTION FUN FACTS
+-----------------------------------------*/
+
+.fun_facts {
+    background: url(https://www.vetbabble.com/wp-content/uploads/2017/11/140207-Dog-Headphones1.jpg)  center;
+    background-size: 1250px 650px;
+}
+.fun_facts .section_overlay {
+    padding-top: 270px;
+    padding-bottom: 120px;
+    background: rgba(0, 0, 0, .4);
+}
+.single_fun_facts {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.single_fun_facts i {
+    color: #13904C;
+    font-size: 60px;
+    ;
+}
+.single_fun_facts h2 {
+    color: #D7DADB;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 35px;
+    margin-top: 15px;
+    margin-bottom: 1px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.single_fun_facts h2 span {
+    font-weight: 300;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.single_fun_facts p {
+    color: #D7DADB;
+    font-size: 20px;
+    margin-top: 0px;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+}
