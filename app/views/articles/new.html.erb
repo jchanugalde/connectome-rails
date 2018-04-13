@@ -4,13 +4,35 @@
 
 <p>Neural EM Image:</p>
 
-<img src="example.png" width="145" height="126" alt="single0" usemap="#single0">
 
-<map name="single0">
-  <area shape="rect" coords="0,0,82,126" alt="Sun" href="sun.htm">
-  <area shape="circle" coords="90,58,3" alt="Mercury" href="mercur.htm">
-  <area shape="circle" coords="124,58,8" alt="Venus" href="venus.htm">
-</map>
+
+
+<div class="container">
+    <div id="slideshow">
+        <img alt="slideshow" src="" id="imgClickAndChange" onclick="changeImage()" />
+    </div>
+</div>
+<script>
+    // How do I load images from tiles?
+    var imgs = ["/tiles/single0.png", "/tiles/single1.png", "/tiles/single2.png", "/tiles/single3.png", "/tiles/single4.png"];
+
+    function changeImage(dir) {
+        var img = document.getElementById("imgClickAndChange");
+        img.src = imgs[imgs.indexOf(img.src) + (dir || 1)] || imgs[dir ? imgs.length - 1 : 0];
+    }
+
+    document.onkeydown = function(e) {
+        e = e || window.event;
+        if (e.keyCode == '37') {
+            changeImage(-1) //left <- show Prev image
+        } else if (e.keyCode == '39') {
+            // right -> show next image
+            changeImage()
+        }
+    }
+</script>
+
+<%= image_tag "/tiles/example.png" %>
 
 </body>
 </html>
